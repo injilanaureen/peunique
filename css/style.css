@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    font-family: "Poppins", sans-serif;
 }
 
 :root{
@@ -10,4 +11,39 @@
     --primary-color: #D9ED92;
     --secondary-color: #1A759F;
     --text-color: #ffffff;
+}
+
+html{
+    overflow-x: hidden;
+    font-size: 65%;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 12%;
+}
+
+header h1{
+    font-size: 6rem;
+}
+
+header nav a{
+    font-size: 2rem;
+    margin-left: 0.6rem;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container img{
+    height: 450px;
 }
