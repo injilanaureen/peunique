@@ -1,0 +1,117 @@
+/* Root Variables */
+:root {
+    --bg-color: #184E77;
+    --primary-color: #D9ED92;
+    --secondary-color: #1A759F;
+    --hover-color: #E8F5E9; /* Light color for hover effect */
+    --text-color: #ffffff;
+}
+
+/* General resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Support Container */
+.support-container {
+    min-height: 100vh;
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    margin: 0 auto;
+    padding: 60px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Section Header */
+.section-header {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.section-header h5 {
+    color: var(--bg-color);
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.section-header h2 {
+    font-size: 40px;
+    color: var(--bg-color);
+}
+
+/* Support Cards Container */
+.support-cards-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap */
+    justify-content: center; /* Center align the cards */
+    gap: 40px; /* Increased spacing between cards */
+    margin-top: 30px;
+}
+
+/* Support Card */
+.support-card {
+    background: #fff;
+    padding: 50px; /* Increased padding inside cards */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    flex: 1 1 33.3rem; /* Fixed width for 3 cards in a row */
+    max-width: 33.3rem; /* Ensures cards don't exceed 33.3rem */
+    box-sizing: border-box;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Hover effect */
+.support-card:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    background-color: var(--hover-color); /* Change background color on hover */
+}
+
+/* Remove text underline for links in Support Cards */
+.support-card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Support Card Titles */
+.support-card h4 {
+    color: var(--bg-color);
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.support-card p {
+    color: #555;
+    font-size: 17px;
+}
+
+.supportcard-heading {
+    font-size: 17px;
+    color: #444;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+/* Nodal Officer Special Styles */
+.support-card strong {
+    display: block;
+    font-weight: bold;
+    color: var(--bg-color);
+}
