@@ -28,8 +28,10 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 0 12%;
+    padding: 2rem 12%;
     z-index: 300;
+    background: #fff;
+    box-shadow: 5px 0 25px #c0c0c0;
 }
 
 header h1{
@@ -374,4 +376,233 @@ footer {
 }
 .about-mission img{
     height: 100%;
+}
+
+/* Support Container */
+.support-container {
+    min-height: 100vh;
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    margin: 0 auto;
+    padding: 60px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Section Header */
+.section-header {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.section-header h5 {
+    color: var(--bg-color);
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.section-header h2 {
+    font-size: 40px;
+    color: var(--bg-color);
+}
+
+/* Support Cards Container */
+.support-cards-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap */
+    justify-content: center; /* Center align the cards */
+    gap: 40px; /* Increased spacing between cards */
+    margin-top: 30px;
+}
+
+/* Support Card */
+.support-card {
+    background: #fff;
+    padding: 50px; /* Increased padding inside cards */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    flex: 1 1 33.3rem; /* Fixed width for 3 cards in a row */
+    max-width: 33.3rem; /* Ensures cards don't exceed 33.3rem */
+    box-sizing: border-box;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Hover effect */
+.support-card:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    background-color: var(--hover-color); /* Change background color on hover */
+}
+
+/* Remove text underline for links in Support Cards */
+.support-card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Support Card Titles */
+.support-card h4 {
+    color: var(--bg-color);
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.support-card p {
+    color: #555;
+    font-size: 17px;
+}
+
+.supportcard-heading {
+    font-size: 17px;
+    color: #444;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+/* Nodal Officer Special Styles */
+.support-card strong {
+    display: block;
+    font-weight: bold;
+    color: var(--bg-color);
+}
+
+.main-container {
+    display: flex;
+    justify-content: center; /* Space between left and right sections */
+    align-items: center; /* Aligns items at the top */
+    height: 100vh;
+    gap: 20px; /* Gap between the two sections */
+}
+
+.contact-form-container {
+    background: linear-gradient(#fff, #fff); /* Linear gradient applied */
+    border: 2px solid transparent;
+    padding: 2rem; /* Equal padding */
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+    align-items: center; /* Center elements horizontally */
+    gap: 20px;
+    border-radius: 16px;
+    box-sizing: border-box;
+    height: 450px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for elevation */
+}
+
+.contact-container {
+    background-color: #fff;
+    padding: 3rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 16px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for elevation */
+    height: 450px;
+}
+
+.contact-container h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #000;
+}
+
+.contact-container h1 span {
+    color: #333;
+}
+
+.contact-feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-feature-icon {
+    font-size: 20px;
+    color: #333;
+}
+
+.contact-feature-text {
+    font-size: 16px;
+    color: #333;
+}
+
+.contact-support-text {
+    color: #555;
+    font-size: 14px;
+}
+
+.contact-container a {
+    color: #0073e6;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.contact-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contact-form-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+}
+
+.contact-form-group input,
+.contact-form-group textarea {
+    padding: 12px;
+    border-radius: 8px;
+    background-color: transparent;
+    border: 1px solid #414141;
+    width: 550px;
+    resize: none;
+    
+}
+
+.contact-form-group input:focus,
+.contact-form-group textarea:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+}
+
+.contact-form-submit-btn {
+    width: 40%;
+    padding: 12px 16px;
+    color: #1a1a1a;
+    background: var(--primary-color);
+    border-radius: 6px;
+    position: relative;
+    top: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    border: none;
+    transition: background 0.3s ease;
+}
+
+.contact-form-submit-btn:hover {
+    background: var(--secondary-color);
+    color: var(--text-color);
+}
+
+.styled-paragraph {
+    width: 100%; /* Full width like an input field */
+    padding: 12px 16px; /* Add padding to mimic input spacing */
+    border-radius: 8px; /* Rounded corners */
+    background-color: transparent; /* Or choose a solid color */
+    border: 1px solid #414141; /* Border like an input */
+    color: #fff; /* Text color */
+    font-size: 14px; /* Input font size */
+    box-sizing: border-box; /* Ensure padding doesn’t affect the width */
+}
+
+.styled-paragraph:focus {
+    outline: none; /* Remove focus outline */
+    border-color: #e81cff; /* Change border color on focus */
 }

@@ -10,12 +10,29 @@
 
     <!-- Include WOW.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <!-- Link to external CSS -->
-    <link rel="stylesheet" href="supportstyle.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
+    <header>
+        <h1>Pe<span>Unique</span></h1>
+        <nav>
+            <a href="./index.html">Home</a>
+            <a href="./aboutus.html">About</a>
+            <a href="./contact.html">Contact</a>
+            <a href="./support.html">Support</a>
+        </nav>
+        <div class="btns">
+            <a href="#" class="btn">Get Started</a>
+            <a href="#" class="login">Login</a>
+        </div>
+    </header>
     <!-- Support Container -->
     <section class="support-container">
         <div class="section-header">
@@ -64,6 +81,80 @@
         </div>
     </section>
 
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h2>PeUnique</h2>
+                <p>
+                    PeUnique is an RBI Authorised Payment Aggregator. PeUnique Payment Gateway seamlessly integrates payment collection, Payouts, and exclusive B2B solutions, simplifying transactions and facilitating payment collection through more than 1.4 million Cash Counters across India, redefining the business payment experience.
+                </p>
+                <!-- <div class="certifications">
+                    <img src="rbi-authorized.png" alt="RBI Authorised Payment Aggregator">
+                    <img src="pcidss.png" alt="PCI DSS">
+                    <img src="iso.png" alt="ISO/IEC 27001:2022">
+                    <img src="npci.png" alt="NPCI Certified Partner">
+                </div> -->
+            </div>
+            <div class="footer-links">
+                <div>
+                    <h3>Products</h3>
+                    <ul>
+                        <li>Online Payment Gateway</li>
+                        <li>eNACH</li>
+                        <li>Payment Gateway for MSMEs</li>
+                        <li>Payouts</li>
+                        <li>Payment Links</li>
+                        <li>LinkPaisa</li>
+                        <li>QwikForm</li>
+                        <li>B2B e-Collect</li>
+                        <li>Offline Payments</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Company</h3>
+                    <ul>
+                        <li>About Us</li>
+                        <li>Contact Us</li>
+                        <li>Careers</li>
+                        <li>Media and Press</li>
+                        <li>Pricing</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Developer</h3>
+                    <ul>
+                        <li>Integration Kits</li>
+                        <li>UAT Checklist</li>
+                    </ul>
+                    <h3>Legal</h3>
+                    <ul>
+                        <li>Disclaimer</li>
+                        <li>Privacy Policy</li>
+                        <li>Grievance Redressal</li>
+                        <li>Terms & Conditions</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Support</h3>
+                    <ul>
+                        <li>FAQs</li>
+                        <li>Raise a Ticket</li>
+                    </ul>
+                    <h3>Find us online</h3>
+                    <div class="social-icons">
+                        <a href="#"><img src="./assets/twitter.png" alt="Twitter"></a>
+                        <a href="#"><img src="./assets/instagram.png" alt="Instagram"></a>
+                        <a href="#"><img src="./assets/facebook.png" alt="Facebook"></a>
+                        <a href="#"><img src="./assets/linkedin.png" alt="LinkedIn"></a>
+                        <a href="#"><img src="./assets/youtube.png" alt="YouTube"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2024 PeUnique. All Rights Reserved.</p>
+        </div>
+    </footer>
     <!-- Include JS -->
     <script>
         new WOW().init();
