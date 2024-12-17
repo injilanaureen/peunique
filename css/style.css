@@ -29,7 +29,7 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2rem 12%;
+    padding: 1rem 12%;
     z-index: 300;
     background: #fff;
     box-shadow: 5px 0 25px #c0c0c0;
@@ -42,6 +42,13 @@ header h1{
 header nav a{
     font-size: 2rem;
     margin-left: 5rem;
+}
+
+body{
+    background-image: radial-gradient(circle, #D9ED92 10%, transparent 10%), 
+                              radial-gradient(circle, #1A759F 10%, transparent 10%);
+            background-position: 0 0, 10px 10px;
+            background-size: 20px 20px;
 }
 
 .btns a{
@@ -62,9 +69,20 @@ header nav a{
 
 section{
     max-height: 100vh;
-    padding: 10rem 9% 2rem;
-    max-width: 1600px;
-    margin: auto;
+    padding: 12rem 9% 2rem;
+}
+
+#main{
+    margin-top: 8rem;
+    position: relative;
+}
+
+#main > img{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -300;
 }
 
 .container{
@@ -88,7 +106,8 @@ section{
 }
 
 .container img{
-    height: 450px;
+    height: 750px;
+    mix-blend-mode: multiply;
 }
 
 .product-container h1,
@@ -121,6 +140,7 @@ section{
 }
 
 .product-item {
+    background: #fff;
     padding: 0 1rem;
     height: 400px;
     border: 1px solid var(--primary-color);
@@ -342,10 +362,20 @@ footer {
     padding-top: 1rem;
     color: var(--text-color);
 }
-
+.about-team{
+    background: linear-gradient(45deg, var(--primary-color),var(--secondary-color));
+    height: 100vh;
+padding: 3rem;
+border: 0.5px solid darkgray;
+border-radius: 2%;
+box-shadow:0 0 20px grey ;
+}
 .about-container{
     height: 100vh;
-   background: linear-gradient(45deg, var(--primary-color),var(--secondary-color));
+    background: linear-gradient(45deg, var(--primary-color),var(--secondary-color));
+    border: 0.5px solid darkgray;
+ border-radius: 2%;
+ box-shadow:0 0 20px grey ;
 }
 .about-heading{
     letter-spacing: 0.6rem;
@@ -413,22 +443,23 @@ font-size: 2.2rem ;
 .team-box{
     display: flex;
     justify-content: center;
-    gap: 4rem;
-    margin-top: 2rem;
+    gap: 2rem;
+    margin-top: 1rem;
     flex-wrap: wrap;
     padding: 10rem 9%; 
 }
 .team{
     height: 50vh;
     border: 1px solid darkgray;
-    border-radius: 15%;
+    border-radius: 10%;
     box-shadow:0 0 10px grey ;
     flex: 1 1 33.33rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1rem 4%;
+    padding: 1rem 2%;
+    background-color: rgb(241, 236, 236);
 }
 .team-img{
     height: auto;
