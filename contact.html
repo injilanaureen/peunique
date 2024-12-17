@@ -3,266 +3,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Page </title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>Contact Page</title>
 
     <style>
-        /* Global reset for body */
-body {
-    height: 100vh; /* Make the body take up the full height of the viewport */
-    margin: 0; /* Remove default body margin */
-    display: flex; /* Enable Flexbox */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    background-color:  var( --bg-color)/* #2b2b2b */ ; /* full body set a background color */
+        @import url('./css/style.css');
+    body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
 }
 
-/* From Uiverse.io by gharsh11032000 */
-.form-container {
-  width: 400px;
-  background: var() /*linear-gradient(#212121, #212121) padding-box,linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box */;
-  border: 2px solid transparent;
-  padding: 32px 24px;
-  font-size: 14px;
-  font-family: inherit;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  box-sizing: border-box;
-  border-radius: 16px;
+.main-container {
+    display: flex;
+    justify-content: space-between; /* Space between left and right sections */
+    align-items: flex-start; /* Aligns items at the top */
+    width: 80%; /* Adjust container width */
+    gap: 20px; /* Gap between the two sections */
 }
 
-.form-container button:active {
-  scale: 0.95;
+.contact-form-container {
+    width: 45%; /* Takes 45% width of the container */
+    background: linear-gradient(#fff, #fff); /* Linear gradient applied */
+    border: 2px solid transparent;
+    padding: 2rem; /* Equal padding */
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+    align-items: center; /* Center elements horizontally */
+    gap: 20px;
+    border-radius: 16px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for elevation */
 }
 
-.form-container .form {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+.contact-container {
+    width: 45%; /* Takes 45% width of the container */
+    background-color: #fff;
+    padding: 3rem;
+
+    border: 1px solid #e0e0e0;
+    border-radius: 16px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for elevation */
 }
 
-.form-container .form-group {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
+.contact-container h1 {
+    font-size: 36px;
+    font-weight: bold;
+    
+    color: #000;
 }
 
-.form-container .form-group label {
-  display: block;
-  margin-bottom: 5px;
-  color:  var();          /* text part colour     */
-  font-weight: 600;
-  font-size: 12px;
+.contact-container h1 span {
+    color: #333;
 }
 
-.form-container .form-group input {
-  width: 100%;
-  padding: 12px 16px;
-  border-radius: 8px;
-  color: #fff;
-  font-family: inherit;
-  background-color: transparent;
-  border: 1px solid #414141;
+.contact-feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
-.form-container .form-group textarea {
-  width: 100%;
-  padding: 12px 16px;
-  border-radius: 8px;
-  resize: none;
-  color: #fff;
-  height: 96px;
-  border: 1px solid #414141;
-  background-color: transparent;
-  font-family: inherit;
+.contact-feature-icon {
+    font-size: 20px;
+    color: #333;
 }
 
-.form-container .form-group input::placeholder {
-  opacity: 0.5;
+.contact-feature-text {
+    font-size: 16px;
+    color: #333;
 }
 
-.form-container .form-group input:focus {
-  outline: none;
-  border-color: #e81cff;
+.contact-support-text {
+    color: #555;
+    font-size: 14px;
 }
 
-.form-container .form-group textarea:focus {
-  outline: none;
-  border-color: #e81cff;
+.contact-container a {
+    color: #0073e6;
+    font-weight: 600;
+    text-decoration: none;
 }
 
-.form-container .form-submit-btn {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  align-self: flex-start;
-  font-family: inherit;
-  color: var( --primary-color)               ;/*#717171*/
-  font-weight: 600;
-  width: 40%;
-  background: var( --bg-color);                 /*#313131 */
-  border: 1px solid #414141;
-  padding: 12px 16px;
-  font-size: inherit;
-  gap: 8px;
-  margin-top: 8px;
-  cursor: pointer;
-  border-radius: 6px;
+.contact-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
-.form-container .form-submit-btn:hover {
-  background-color: #fff;
-  border-color: #fff;
+.contact-form-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+}
+
+.contact-form-group input,
+.contact-form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: transparent;
+    border: 1px solid #414141;
+}
+
+.contact-form-group input:focus,
+.contact-form-group textarea:focus {
+    outline: none;
+    border-color: #e81cff;
+}
+
+.contact-form-submit-btn {
+    width: 40%;
+    padding: 12px 16px;
+    color: var(--primary-color);
+    background: var(--bg-color);
+    border: 1px solid #414141;
+    border-radius: 6px;
+    position: relative;
+    top: 5px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.contact-form-submit-btn:hover {
+    background-color: #fff;
+    color: #000;
+    border-color: #fff;
+}
+
+.styled-paragraph {
+    width: 100%; /* Full width like an input field */
+    padding: 12px 16px; /* Add padding to mimic input spacing */
+    border-radius: 8px; /* Rounded corners */
+    background-color: transparent; /* Or choose a solid color */
+    border: 1px solid #414141; /* Border like an input */
+    color: #fff; /* Text color */
+    font-size: 14px; /* Input font size */
+    font-family: inherit; /* Match font style with input fields */
+    box-sizing: border-box; /* Ensure padding doesn’t affect the width */
+}
+
+.styled-paragraph:focus {
+    outline: none; /* Remove focus outline */
+    border-color: #e81cff; /* Change border color on focus */
 }
 
     </style>
 </head>
 <body>
-<div class="form-container">
-      <form class="form">
-
-        <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="#" required="">
-          </div>
-
-          <div class="form-group">
-            <label for="">Phone no</label>
-            <input type="text" id="email" name="email" required="">
-          </div>
-
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="text" id="email" name="email" required="">
-          </div>
-
-        <div class="form-group">
-          <label for="textarea">How Can We Help You?</label>
-          <textarea name="textarea" id="textarea" rows="10" cols="50" required="">          </textarea>
+    <div class="main-container">
+        <!-- Contact Form on the Left -->
+        <div class="contact-form-container">
+            <form class="contact-form" action="#" method="POST">
+                <div class="contact-form-group">
+                    <label for="contact-name">Name</label>
+                    <input type="text" id="contact-name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="contact-form-group">
+                    <label for="contact-phone">Phone no</label>
+                    <input type="tel" id="contact-phone" name="phone" placeholder="Enter your phone number" pattern="[0-9]{10}" required>
+                </div>
+                <div class="contact-form-group">
+                    <label for="contact-email">Email</label>
+                    <input type="email" id="contact-email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="contact-form-group">
+                    <label for="contact-message">How Can We Help You?</label>
+                    <textarea id="contact-message" name="message" placeholder="Write your message here" rows="5" required></textarea>
+                </div>
+                <button class="contact-form-submit-btn" type="submit">Submit</button>
+            </form>
         </div>
 
-        <button class="form-submit-btn" type="submit">Submit</button>
-      </form>
+        <!-- Contact Details on the Right -->
+        <div class="contact-container">
+            <h1>Contact our <span>peunique team</span></h1>
+            <!-- <p  class="styled-paragraph">Let’s explore how Notion can work for you.</p> -->
+           <div style="position: relative; top: 10px;">
+            <div class="contact-feature">        
+              <div class="contact-feature-icon">✓</div>
+              <div class="contact-feature-text">One flexible tool for your entire company to share knowledge, ship projects, and collaborate.</div>
+          </div>
+           </div>
+            <div class="contact-feature">
+                <div class="contact-feature-icon">✓</div>
+                <div class="contact-feature-text">Enterprise features to securely manage user access and security.</div>
+            </div>
+            <div class="contact-feature">
+                <div class="contact-feature-icon">✓</div>
+                <div class="contact-feature-text">Dedicated support to work with you on your setup and help you build the best plan for your company.</div>
+            </div>
+            <p class="contact-support-text">Looking for support? <a href="#">Visit help & documentation</a></p>
+        </div>
     </div>
 </body>
-
-
-
 </html>
-
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Our Sales Team</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    /* Global reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
-
-    body {
-      background-color: #f9f9f9;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      margin: 0;
-    }
-
-    .container {
-      background-color: #fff;
-      padding: 30px 20px;
-      max-width: 600px;
-      border: 1px solid #e0e0e0;
-      border-radius: 8px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    h1 {
-      font-size: 36px;
-      font-weight: bold;
-      margin-bottom: 10px;
-      color: #000;
-    }
-
-    h1 span {
-      color: #333;
-    }
-
-    p {
-      font-size: 16px;
-      color: #555;
-      margin-bottom: 20px;
-    }
-
-    .feature {
-      display: flex;
-      align-items: flex-start;
-      gap: 10px;
-      margin-bottom: 20px;
-    }
-
-    .feature-icon {
-      font-size: 20px;
-      color: #333;
-    }
-
-    .feature-text {
-      color: #333;
-      font-size: 16px;
-      line-height: 1.5;
-    }
-
-    .support-text {
-      margin-top: 20px;
-      color: #555;
-      font-size: 14px;
-    }
-
-    a {
-      text-decoration: none;
-      color: #0073e6;
-      font-weight: 600;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <h1>Contact our <span>sales team</span></h1>
-    <p>Let’s explore how Notion can work for you.</p>
-
-    <div class="feature">
-      <div class="feature-icon">✓</div>
-      <div class="feature-text">
-        One flexible tool for your entire company to share knowledge, ship projects, and collaborate.
-      </div>
-    </div>
-
-    <div class="feature">
-      <div class="feature-icon">✓</div>
-      <div class="feature-text">
-        Enterprise features to securely manage user access and security.
-      </div>
-    </div>
-
-    <div class="feature">
-      <div class="feature-icon">✓</div>
-      <div class="feature-text">
-        Dedicated support to work with you on your setup and help you build the best plan for your company.
-      </div>
-    </div>
-
-    <p class="support-text">Looking for support? <a href="#">Visit help & documentation</a></p>
-  </div>
-</body>
-</html>
- -->
