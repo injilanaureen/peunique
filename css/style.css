@@ -36,13 +36,33 @@ header h1{
 
 header nav a{
     font-size: 2rem;
-    margin-left: 0.6rem;
+    margin-left: 5rem;
+}
+
+section{
+    max-height: 100vh;
+    padding: 10rem 9% 2rem;
 }
 
 .container{
+    margin: auto;
+    max-width: 1300px;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 4rem;
+}
+
+.content h1{
+    font-size: 3rem;
+}
+
+.content h2{
+    font-size: 5rem;
+}
+
+.content p{
+    font-size: 1.5rem;
 }
 
 .container img{
@@ -96,90 +116,3 @@ font-size: 2.2rem ;
 .about-mission img{
     height: 100%;
 }
-.about-achievements img{
-    
-    height: 100%;
-}
-.short-desc{
-    line-height: 1.2;
-    font-size: 2rem;
-    text-align: center;
-}
-.tertiary-heading{
-    font-size: 3.6rem ;
-    color: var(--tertiary-color);
-}
-.secondary-heading{
-    font-size: 6rem ;
-    color: var(--tertiary-color);
-    text-align: center;margin-top: 8REM;
-
-}
-
-.team-box{
-    display: flex;
-    justify-content: center;
-    gap: 4rem;
-    margin-top: 2rem;
-    flex-wrap: wrap;
-    padding: 10rem 9%; 
-}
-.team{
-    height: 50vh;
-    border: 1px solid darkgray;
-    border-radius: 15%;
-    box-shadow:0 0 10px grey ;
-    flex: 1 1 33.33rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem 4%;
-}
-.team-img{
-    height: auto;
-    width: 200px;
-}
-.team-name{
-    color: var(--secondary-color);
-    font-size: 2rem;
-    margin-top: 1.8rem;
-}
-.team-desc{
-    font-size: 1.6rem;
-    margin-top: 1.8rem;
-    text-align: center;
-    line-height: 1.8;
-    color: #999191;
-}
-
-.about-partners {
-    height: 50vh;
-    position: relative;
-    overflow: hidden; /* Hide the overflowing content */
-}
-
-.image-slider {
-    display: flex;
-    margin-top: 10REM;
-    gap: 15rem; /* Space between images */
-    width: max-content; /* Stretch the container to accommodate images */
-    animation: slide-animation 10s linear infinite; /* Infinite animation */
-}
-
-.partner-image {
-    height: 150px;
-    width: 200px; /* Fixed size for consistency */
-    border-radius: 50px;
-    padding: 20px;
-}
-
-@keyframes slide-animation {
-    from {
-        transform: translateX(0); /* Start position */
-    }
-    to {
-        transform: translateX(-50%); /* Slide by half the total content width */
-    }
-}
-
