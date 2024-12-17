@@ -257,7 +257,7 @@ section{
 }
 
 footer {
-    background-color: #002147; /* Dark blue background */
+    background-color: var(--bg-color);
     color: #fff;
     padding: 2rem 1rem;
 }
@@ -274,14 +274,15 @@ footer {
 }
 
 .footer-about h2 {
-    color: #f8a11c;
-    font-size: 2rem;
+    color: var(--primary-color);
+    font-size: 5rem;
     margin-bottom: 1rem;
 }
 
 .footer-about p {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     margin-bottom: 1rem;
+    color: var(--text-color);
 }
 
 .certifications img {
@@ -297,24 +298,27 @@ footer {
 }
 
 .footer-links h3 {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     margin-bottom: 0.5rem;
-    color: #f8a11c;
+    color: var(--primary-color);
 }
 
 .footer-links ul {
     list-style: none;
+    color: var(--text-color);
 }
 
 .footer-links li {
     margin-bottom: 0.3rem;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     cursor: pointer;
+    color: var(--text-color);
 }
 
 .social-icons a {
     margin-right: 10px;
     display: inline-block;
+    color: var(--text-color);
 }
 
 .social-icons img {
@@ -326,12 +330,13 @@ footer {
     transform: scale(1.2);
 }
 
-.footer-bottom {
+.footer-bottom p{
     text-align: center;
     margin-top: 2rem;
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     border-top: 1px solid #555;
     padding-top: 1rem;
+    color: var(--text-color);
 }
 
 .about-container{
