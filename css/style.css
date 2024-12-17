@@ -11,6 +11,7 @@
     --bg-color: #184E77;
     --primary-color: #D9ED92;
     --secondary-color: #1A759F;
+    --tertiary-color:#1E6091;
     --text-color: #ffffff;
     --btn-text-color: #1a1a1a;
 }
@@ -364,20 +365,29 @@ footer {
 }
 .about-goals{
     display: flex;
-    gap: 6rem;
     justify-content: center;
-    margin: 10px;
+    margin-top: 10rem;
+    height: 50vh;
+    flex-wrap: wrap;
+    padding: 10rem 9%; 
+
 }
-.about-mission ,.about-vision{
-    height: 25rem;
+.about-mission ,.about-vision,.about-achievements{
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex:1 1 33.3rem;
+    
 }
 .about-vision img{
     height: 100%;
+
 }
 .about-mission img{
     height: 100%;
 }
-
 /* Support Container */
 .support-container {
     min-height: 100vh;

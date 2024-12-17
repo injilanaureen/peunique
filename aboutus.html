@@ -6,6 +6,65 @@
     <title>About Us</title>
     <style>
         @import url('./css/style.css');
+        /* From Uiverse.io by Creatlydev */ 
+.button {
+  line-height: 1;
+  text-decoration: none;
+  display: inline-flex;
+  border: none;
+  cursor: pointer;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: var(--primary-color);
+  color: #1a1a1a;
+  border-radius: 10rem;
+  padding: 0.75rem 1.5rem;
+  padding-left: 20px;
+  margin-top: 2.6rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: background-color 0.3s;
+}
+
+.button__icon-wrapper {
+  flex-shrink: 0;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  color: var(--bg-color);
+  background-color: #fff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.button:hover {
+  background-color:var(--secondary-color);
+  color: #fff;
+
+}
+
+.button:hover .button__icon-wrapper {
+  color: #000;
+}
+
+.button__icon-svg--copy {
+  position: absolute;
+  transform: translate(-150%, 150%);
+}
+
+.button:hover .button__icon-svg:first-child {
+  transition: transform 0.3s ease-in-out;
+  transform: translate(150%, -150%);
+}
+
+.button:hover .button__icon-svg--copy {
+  transition: transform 0.3s ease-in-out 0.1s;
+  transform: translate(0);
+}
+
     </style>
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
@@ -22,8 +81,140 @@
     </div>
   
     <div class="about-goals">
-        <div class="about-mission"><img src="mission.avif" alt="mission"><p>To be the most inclusive, innovative and secure payment system.</p></div>
-        <div class="about-vision"><img src="vission.avif" alt="vision"><p>To be recognised as one of the top 10 innovative and inclusive payment system providers.</p></div>
+        <div  data-aos="fade-right" data-aos-duration="1500"  class="about-mission"> <h4  class="tertiary-heading">Mission</h4><img src="mission.avif" alt="mission"><p class="short-desc">To be the most inclusive, innovative and secure payment system.</p></div>
+       
+        <div data-aos="fade-up" data-aos-duration="1500" class="about-achievements"><h4 class="tertiary-heading">Achievements</h4><img src="acheivements.jpg" alt="acheivements"><p class="short-desc">20+ websites included as there payment gateway.</p></div>
+       
+        <div  data-aos="fade-left" data-aos-duration="1500" class="about-vision"><h4 class="tertiary-heading">Vision</h4><img src="vission.avif" alt="vision"><p class="short-desc">To be recognised as one of the top 10 innovative and inclusive payment system providers.</p></div>
+    </div>
+
+    <div class="about-team">
+        <h2 class="secondary-heading"> Our Team</h2>
+        <div class="team-box">
+            <div class="team"><img class="team-img"  src="image.png" alt="manager"><p class="team-name">Mr Nikhil Advani</p><p class="team-desc">A former banker with companies like ICICI, Kotak Mahindra & HDFC with close to 24 years of experience.</p>
+                <button href="#" class="button" style="--clr: #7808d0">
+                  <span class="button__icon-wrapper">
+                    <svg
+                      viewBox="0 0 14 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="button__icon-svg"
+                      width="10"
+                    >
+                      <path
+                        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                
+                    <svg
+                      viewBox="0 0 14 15"
+                      fill="none"
+                      width="10"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="button__icon-svg button__icon-svg--copy"
+                    >
+                      <path
+                        d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                        fill="currentColor"
+                      ></path>
+                    </svg>
+                  </span>
+                  Explore All
+                </button>
+                </div>
+            <div class="team"><img class="team-img"  src="image.png" alt="manager"><p class="team-name">Mr Sunil Agrawal</p><p class="team-desc">Proven Business Leader, Entrepreneur, & business strategist, with close to 25 years of experience in tech strategy & sales.</p> <button href="#" class="button" style="--clr: #7808d0">
+                <span class="button__icon-wrapper">
+                  <svg
+                    viewBox="0 0 14 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="button__icon-svg"
+                    width="10"
+                  >
+                    <path
+                      d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+              
+                  <svg
+                    viewBox="0 0 14 15"
+                    fill="none"
+                    width="10"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="button__icon-svg button__icon-svg--copy"
+                  >
+                    <path
+                      d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                </span>
+                Explore All
+              </button></div>
+            <div class="team"><img class="team-img"  src="image.png" alt="manager"><p class="team-name">Mr Ankit Chaudhary</p><p class="team-desc"> MBA in Finance & with a vast experience of 28 years including 14.5 years of experience with top two private Banks viz. HDFC Bank & ICICI Bank</p>
+                <button href="#" class="button" style="--clr: #7808d0">
+                    <span class="button__icon-wrapper">
+                      <svg
+                        viewBox="0 0 14 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="button__icon-svg"
+                        width="10"
+                      >
+                        <path
+                          d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                  
+                      <svg
+                        viewBox="0 0 14 15"
+                        fill="none"
+                        width="10"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="button__icon-svg button__icon-svg--copy"
+                      >
+                        <path
+                          d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                          fill="currentColor"
+                        ></path>
+                      </svg>
+                    </span>
+                    Explore All
+                  </button></div>
+        </div>
+
+    </div>
+
+    <div class="about-partners">
+        <h2 class="secondary-heading">Our Partners</h2>
+        <div class="image-slider" scrollamount="20" direction="fade-left">
+            <img class="partner-image" src="bankit.png" alt="">
+            <img class="partner-image" src="eko-logo.svg" alt="">
+            <img class="partner-image" src="icici.jpg" alt="">
+            <img class="partner-image" src="mahagram.jpg" alt="">
+            <img class="partner-image" src="payu.png" alt="">
+            <img class="partner-image" src="sbm bank.png" alt="">
+            <img class="partner-image" src="yes bank.jpg" alt="">
+
+            <!-- Duplicate images -->
+
+            <img class="partner-image" src="bankit.png" alt="">
+            <img class="partner-image" src="eko-logo.svg" alt="">
+            <img class="partner-image" src="icici.jpg" alt="">
+            <img class="partner-image" src="mahagram.jpg" alt="">
+            <img class="partner-image" src="payu.png" alt="">
+            <img class="partner-image" src="sbm bank.png" alt="">
+            <img class="partner-image" src="yes bank.jpg" alt="">
+        </div>
+
+    </div>
+  
+    <div class="about-testimonials">
+        <h2 class="secondary-heading">Testimonials</h2>
+
     </div>
 
     </div>
