@@ -35,13 +35,33 @@ header h1{
 
 header nav a{
     font-size: 2rem;
-    margin-left: 0.6rem;
+    margin-left: 5rem;
+}
+
+section{
+    max-height: 100vh;
+    padding: 10rem 9% 2rem;
 }
 
 .container{
+    margin: auto;
+    max-width: 1300px;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 4rem;
+}
+
+.content h1{
+    font-size: 3rem;
+}
+
+.content h2{
+    font-size: 5rem;
+}
+
+.content p{
+    font-size: 1.5rem;
 }
 
 .container img{
