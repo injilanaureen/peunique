@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    font-family: "Poppins", sans-serif;
 }
 
 :root{
@@ -12,3 +13,57 @@
     --text-color: #ffffff;
 }
 
+html{
+    overflow-x: hidden;
+    font-size: 65%;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 12%;
+}
+
+header h1{
+    font-size: 6rem;
+}
+
+header nav a{
+    font-size: 2rem;
+    margin-left: 5rem;
+}
+
+section{
+    max-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+.container{
+    margin: auto;
+    max-width: 1300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.content h1{
+    font-size: 3rem;
+}
+
+.content h2{
+    font-size: 5rem;
+}
+
+.content p{
+    font-size: 1.5rem;
+}
+
+.container img{
+    height: 450px;
+}
