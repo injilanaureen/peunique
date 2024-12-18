@@ -3,21 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Disclaimer</title>
+    <style>
+        @import url('./css/style.css');
+        section {
+    
+  justify-content: center;       
+    background-color: #ffffff; /* White background */
+    margin-top: 15% ; /* Centered horizontally with spacing */
+    padding: 20px 30px; /* Internal spacing */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 100%; /* Restrict width for better readability */
+}
+
+h2 {
+    font-size: 24px;
+    color: #1a1a1a; /* Darker color for heading */
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    color: #444; /* Slightly lighter text for paragraphs */
+    margin-bottom: 15px;
+}
+
+strong {
+    font-weight: 600; /* Bold font */
+    color: #1a1a1a;
+}
+
+em {
+    font-style: italic;
+    color: #555; /* Slightly muted color for emphasis */
+} 
+@media screen and (max-width: 600px) {
+            section {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 22px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+
+ /* disclaimer  section */
+ .disclaimer {
+    font-size: x-large; /* Adjust font size */
+    font-weight: bold;  /* Make it bold for emphasis */
+    color: #2c3e50;     /* Professional dark blue */
+    margin-bottom: 10px; /* Add spacing below the title */
+ }
+    </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="icon" type="image/x-icon" href="./assets/favicon.png">
-    <style>
-        @import url('./css/style.css');
-    </style>
+
 </head>
 <body>
     <header>
-        <a href="./index.html">
-            <img src="./assets/icon.png" alt="" height="50px">
-        </a>
+        <h1>Pe<span>Unique</span></h1>
         <nav>
             <a href="./index.html">Home</a>
             <a href="./aboutus.html">About</a>
@@ -28,63 +80,30 @@
             <a href="#" class="btn">Get Started</a>
             <a href="#" class="login">Login</a>
         </div>
-        <i class='bx bx-menu' id="menu_btn"></i>
     </header>
-    <div class="main-container">
-        <div class="contact-form-container">
-            <form class="contact-form" action="#" method="POST">
-                <div class="contact-form-group">
-                    <label for="contact-name">Name</label>
-                    <input type="text" id="contact-name" name="name" placeholder="Enter your name" required>
-                </div>
-                <div class="contact-form-group">
-                    <label for="contact-phone">Phone no</label>
-                    <input type="tel" id="contact-phone" name="phone" placeholder="Enter your phone number" pattern="[0-9]{10}" required>
-                </div>
-                <div class="contact-form-group">
-                    <label for="contact-email">Email</label>
-                    <input type="email" id="contact-email" name="email" placeholder="Enter your email" required>
-                </div>
-                <div class="contact-form-group">
-                    <label for="contact-message">How Can We Help You?</label>
-                    <textarea id="contact-message" name="message" placeholder="Write your message here" rows="5" required></textarea>
-                </div>
-                <button class="contact-form-submit-btn" type="submit">Submit</button>
-            </form>
-        </div>
-        <div class="contact-container">
-            <h1>Contact our <span>peunique team</span></h1>
-           <div style="position: relative; top: 10px;">
-            <div class="contact-feature">        
-              <div class="contact-feature-icon">✓</div>
-              <div class="contact-feature-text">One flexible tool for your entire company to share knowledge, ship projects, and collaborate.</div>
-          </div>
-           </div>
-            <div class="contact-feature">
-                <div class="contact-feature-icon">✓</div>
-                <div class="contact-feature-text">Enterprise features to securely manage user access and security.</div>
-            </div>
-            <div class="contact-feature">
-                <div class="contact-feature-icon">✓</div>
-                <div class="contact-feature-text">Dedicated support to work with you on your setup and help you build the best plan for your company.</div>
-            </div>
-            <p class="contact-support-text">Looking for support? <a href="#">Visit help & documentation</a></p>
-            <div class="address">
-                <div class="first">
-                    <h1>Address</h1>
-                    <p>A-43, Office No. 301 Third Floor</p>
-                    <p>Sector - 63, Noida Uttar Pradesh</p>
-                    <p>Pin-201301</p>
-                </div>
-                <div class="contact">
-                    <h1>Contact</h1>
-                    <p>care@peunique.com</p>
-                    <p>7282823737</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <footer>
+
+
+    <!-- here will disclaimer -->
+     
+       
+        <section>
+          <h1 class="disclaimer">Disclaimer</h1>
+            <h2>Last Updated Date:latest Update  </h2>
+        <p>
+            peunique allows businesses to accept, process and disburse payments with its product suite. It gives you access to all payment modes including credit card, debit card, net banking, UPI etc.
+        </p>
+        <p>
+            peunique provides service on an <em>"as is"</em> and <em>"as available"</em> basis. peunique itself is not a bank and doesn’t hold or claim to hold a banking license. peunique is an RBI authorised payment aggregator.
+        </p>
+        <p>
+            <strong>peunique.com</strong> makes no representations or warranties of any kind, express or implied, regarding the accuracy, reliability, or completeness of the content on the Merchant Website or the availability or operation of the Website. You expressly agree that your use of the Merchant Website is at your sole discretion.
+        </p>
+     
+     </section>
+     
+          <!-- footer  -->
+
+     <footer>
         <div class="footer-container">
             <div class="footer-about">
                 <h2>PeUnique</h2>
@@ -155,7 +174,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>Copyright © 2024 Peunique Payment Solution Pvt. Ldt. All Rights Reserved.</p>
+            <p>Copyright © 2024 PeUnique. All Rights Reserved.</p>
         </div>
     </footer>
 </body>
