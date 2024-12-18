@@ -774,3 +774,296 @@ font-size: 2.2rem ;
     font-size: 1.5rem;
     color: #1a1a1a;
 }
+
+/* Grievance Section */
+.grievence-header {
+    text-align: center;
+    margin: 4rem 0;
+    background-color: var(--primary-color);
+    padding: 2rem 0;
+    color: var(--bg-color);
+    border-radius: 0.5rem;
+}
+
+.grievence-header h5 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Grievance Container */
+.grievance-container {
+    max-width: 1000px;
+    margin: 6rem auto; /* Adds separation from the header and footer */
+    padding: 3rem;
+    background: #fdfdfd;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Grievance Content */
+.grievance-content {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: #333;
+}
+
+.grievance-content h6 {
+    font-size: 1.8rem;
+    color: var(--tertiary-color);
+    margin: 2rem 0 1rem;
+    font-weight: 600;
+}
+
+.grievance-content p, 
+.grievance-content ul {
+    margin: 1rem 0;
+    color: #444;
+}
+
+/* List Styling */
+.grievance-content ul {
+    padding-left: 2rem;
+    list-style-type: disc;
+    margin-bottom: 2rem;
+}
+
+/* Grievance Section */
+.grievence-header {
+    text-align: center;
+    margin: 4rem 0;
+    background-color: var(--primary-color);
+    padding: 2rem 0;
+    color: var(--bg-color);
+    border-radius: 0.5rem;
+}
+
+.grievence-header h5 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Grievance Container */
+.grievance-container {
+    max-width: 90%;
+    margin: 6rem auto;
+    padding: 3rem;
+    background: #fdfdfd;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+
+/* Grievance Content */
+.grievance-content {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    color: #333;
+    word-wrap: break-word;
+}
+
+.grievance-content h6 {
+    font-size: 1.8rem;
+    color: var(--tertiary-color);
+    margin: 2rem 0 1rem;
+    font-weight: 600;
+}
+
+.grievance-content p,
+.grievance-content ul {
+    margin: 1rem 0;
+    color: #444;
+}
+
+/* List Styling */
+.grievance-content ul {
+    padding-left: 2rem;
+    list-style-type: disc;
+    margin-bottom: 2rem;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+
+table th,
+table td {
+    border: 1px solid #ddd;
+    padding: 1.2rem;
+    text-align: left;
+}
+
+table th {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    font-weight: bold;
+}
+
+table td a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+table td a:hover {
+    text-decoration: underline;
+}
+
+/* Container Margins */
+.grievance-footer {
+    margin-top: 6rem;
+}
+
+/* Responsive Design for Tablets (1024px and below) */
+@media (max-width: 1024px) {
+    .grievance-container {
+        width: 85%;
+        padding: 2.5rem;
+    }
+
+    .grievence-header h5 {
+        font-size: 2.2rem;
+    }
+
+    .grievance-content {
+        font-size: 1.4rem;
+    }
+
+    table th, table td {
+        font-size: 1.4rem;
+        padding: 1rem;
+    }
+}
+
+/* Responsive Design for Phones (768px and below) */
+@media (max-width: 768px) {
+    .grievance-container {
+        width: 90%;
+        padding: 2rem;
+    }
+
+    .grievence-header h5 {
+        font-size: 2rem;
+    }
+
+    .grievance-content {
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+    }
+
+    table th, table td {
+        font-size: 1.2rem;
+        padding: 0.8rem;
+    }
+}
+
+/* Responsive Design for Small Phones (480px and below) */
+@media (max-width: 480px) {
+    .grievance-container {
+        width: 95%;
+        padding: 1.5rem;
+    }
+
+    .grievence-header {
+        padding: 1.5rem 0;
+    }
+
+    .grievence-header h5 {
+        font-size: 1.8rem;
+    }
+
+    .grievance-content {
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+    }
+
+    table th, table td {
+        font-size: 1.1rem;
+        padding: 0.6rem;
+    }
+
+    table {
+        font-size: 1.2rem;
+        margin-top: 1.5rem;
+    }
+}
+
+/*terms and conditions*/
+
+.condition-container {
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+.condition{
+    max-width: 1200px;
+    margin: 10% auto;
+}
+.condition-header{
+    text-align: center;
+    margin: 4rem 0;
+    padding: 2rem 0;
+    border-radius: 0.5rem;
+}
+
+.condition-header h5 {
+    font-size: 7rem;
+    font-weight: bold;
+    margin: 0;
+    color: var(--bg-color);
+
+}
+
+.condition-section {
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 5rem;
+    background: #fff;
+}
+
+.condition-section h3 {
+    font-size: 1.8rem;
+    color: #0056b3;
+    margin: 10px 0;
+}
+
+.condition-section p {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    text-align: justify;
+
+}
+.condition-section li {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    text-align: justify;margin-top: 1rem;
+}
+
+.condition-section p:last-of-type {
+    margin-bottom: 0;
+}
+
+#introduction {
+    border-left: 5px solid #2196f3;
+}
+
+#definitions {
+    border-left: 5px solid #ff5722;
+}
+
+#disclaimer {
+    border-left: 5px solid #ff9800;
+}
+
+#intellectual-property {
+    border-left: 5px solid #4caf50;
+}
+
+#miscellaneous {
+    border-left: 5px solid #9c27b0;
+}
