@@ -15,6 +15,9 @@
     --text-color: #ffffff;
     --btn-text-color: #1a1a1a;
 }
+main {
+    padding-top: 120px; /* Add top spacing to prevent overlap with header */
+}
 
 html{
     overflow-x: hidden;
