@@ -74,7 +74,7 @@ body{
 
 section{
     max-height: 100vh;
-    padding: 12rem 9% 2rem;
+    padding: 8rem 9% 0rem;
     margin-top: 10rem;
 }
 
@@ -112,7 +112,7 @@ section{
 }
 
 .container img{
-    height: 750px;
+    height: 480px;
     mix-blend-mode: multiply;
 }
 
@@ -487,14 +487,13 @@ font-size: 2.2rem ;
 }
 
 .about-partners {
-    height: 50vh;
-    position: relative;
+    height: 80vh;
     overflow: hidden; /* Hide the overflowing content */
 }
 
 .image-slider {
     display: flex;
-    margin-top: 10REM;
+    margin-top: 10rem;
     gap: 15rem; /* Space between images */
     width: max-content; /* Stretch the container to accommodate images */
     animation: slide-animation 10s linear infinite; /* Infinite animation */
@@ -784,6 +783,10 @@ font-size: 2.2rem ;
     color: #1a1a1a;
 }
 
+footer {
+    margin-top: 10rem;
+}
+
 @media(max-width:1250px){
     html{
         font-size: 55%;
@@ -802,7 +805,7 @@ font-size: 2.2rem ;
 
     .container img{
         width: auto;
-        height: 500px;
+        height: 450px;
     }
 
     .que-container{
